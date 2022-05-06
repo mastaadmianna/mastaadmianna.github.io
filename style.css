@@ -472,7 +472,7 @@ section .projects {
 
 .projects .content .title span{
     padding-bottom: 12px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .projects .boxes {
@@ -484,12 +484,14 @@ section .projects {
 
 .projects .boxes .boxs {
     width: calc(100% / 3 - 0);
-    margin: 20px 30px;
+    margin: 40px 30px;
     text-align: center;
     border-radius: 15px;
+    padding-bottom: 50px;
 }  
 
 .boxs {
+    padding-bottom: 50px;
     position: relative;
     width: 426px;
     height: 240px;
@@ -502,7 +504,7 @@ section .projects {
 } 
 
 .boxs:hover {
-    height: 500px;
+    height: 600px;
 }
 
 .boxs .circle {
@@ -511,7 +513,7 @@ section .projects {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 50px;
     overflow: hidden;
 }
 
@@ -521,29 +523,31 @@ section .projects {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 130%;
     background: #fff;
     clip-path: circle(90px at center);
     transition: 0.5s;
 }
 
 .boxs:hover .circle:before {
+    padding-top: 150px;
     background: #7E1E88;
-    clip-path: circle(300px at center);
+    clip-path: circle(500px at center);
 }
 
 .boxs .image {
-    margin-top: 5px;
+    margin-bottom: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     pointer-events: none;
     transition: 0.5s;
+    
 }
 
 .boxs:hover .image {
-    top: 10%;
+    top: 15%;
     width: 383.4px;
     height: 216px;
 }
@@ -551,7 +555,7 @@ section .projects {
 .boxs .webcontent {
     position: relative;
     width: 65%;
-    top: 35%;
+    top: 45%;
     padding-top: 10px;
     transition: 0.5s;
     opacity: 0;
@@ -569,6 +573,7 @@ section .projects {
     font-weight: 800;
     font-size: 32px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .boxs .webcontent p {
@@ -589,6 +594,7 @@ section .projects {
 }
 
 .projects .boxes .boxs .image {
+    margin-top: 40px;
     border-radius: 20px;
     box-shadow: 0 0px 30px rgba(0, 0, 0, 1);
 }
@@ -600,7 +606,7 @@ section .projects {
 }*/
 
 .textsa {
-    margin-top: -35px;
+    margin-top: -15px;
     padding-bottom: 30px;
     font-weight: 400;
 }
@@ -745,19 +751,23 @@ section .projects {
  
 /* Connect section*/
 .connect {
-    max-height: 600px;
+    max-height: 900px;
+    margin-bottom: 120px;
+}
+.connect .content .title {
+    padding-top: 400px;
 }
 
-.connect::before {
+/*.connect::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50%;
+    height: 13%;
     z-index: 1;
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(126, 30, 136, 0.25);
-}
+}*/
 
 .connect .connect-details .boxes {
     display: flex;
@@ -765,7 +775,7 @@ section .projects {
     align-items: center;
     margin: 0 250px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 .connect ul {
@@ -774,6 +784,7 @@ section .projects {
     align-items: center;
     justify-content: center;
     top: 120px;
+    bottom: 120px;
     z-index: 2;
 }
 
@@ -789,7 +800,7 @@ section .projects {
     width: 80px;
     height: 80px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
